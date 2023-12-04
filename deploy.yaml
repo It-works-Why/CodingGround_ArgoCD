@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: backend
-  name: CodingGround_backend
+  name: CodingGround-backend
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
         app: backend
     spec:
       containers:
-      - name: codingground_backend
+      - name: codingground-backend
         image: 503237308475.dkr.ecr.ca-central-1.amazonaws.com/codingground-backend:v0.0.1
         ports:
         - containerPort: 8090
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: CodingGround_backend_LB
+  name: CodingGround-backend.LB
 spec:
   type: LoadBalancer
   ports:
