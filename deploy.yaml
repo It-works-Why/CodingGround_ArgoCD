@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend-LB
+  name: codingground-backend-lb
 spec:
   type: LoadBalancer
   ports:
