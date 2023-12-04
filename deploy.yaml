@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: backend
-  name: CodingGround-backend
+  name: codingground-backend
 spec:
   replicas: 1
   selector:
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: CodingGround-backend.LB
+  name: codingground-backend.LB
 spec:
   type: LoadBalancer
   ports:
