@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: codingground-backend
-        image: 503237308475.dkr.ecr.ca-central-1.amazonaws.com/codingground-backend:v0.3.3
+        image: 503237308475.dkr.ecr.ca-central-1.amazonaws.com/codingground-backend:v0.3.2
         ports:
         - containerPort: 8090
