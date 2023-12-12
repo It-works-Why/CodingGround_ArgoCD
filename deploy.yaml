@@ -21,6 +21,6 @@ spec:
       serviceAccountName: s3uploadrole
       containers:
       - name: codingground-backend
-        image: 503237308475.dkr.ecr.ca-central-1.amazonaws.com/codingground-backend:v0.5.1
+        image: 503237308475.dkr.ecr.ca-central-1.amazonaws.com/codingground-backend:v0.5.2
         ports:
         - containerPort: 8090
