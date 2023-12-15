@@ -4,7 +4,7 @@ metadata:
   name: codingground-backend
   namespace: codingground-backend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: backend
@@ -22,5 +22,10 @@ spec:
       containers:
       - name: codingground-backend
         image: 503237308475.dkr.ecr.ap-east-1.amazonaws.com/codingground-backend:v0.8.2
+        resources:
+          requests:
+            cpu: 100m
+          limits:
+            cpu: 600m
         ports:
         - containerPort: 8090
