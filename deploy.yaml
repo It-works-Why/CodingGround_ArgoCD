@@ -21,7 +21,7 @@ spec:
       serviceAccountName: s3uploadrole
       containers:
       - name: codingground-backend
-        image: 503237308475.dkr.ecr.ap-east-1.amazonaws.com/codingground-backend:v0.8.7
+        image: 503237308475.dkr.ecr.ap-east-1.amazonaws.com/codingground-backend:v0.8.8
         resources:
           requests:
             cpu: 100m
